@@ -14,4 +14,4 @@ WORKDIR /home/weebproject/
 
 # Finalization
 CMD echo done
-CMD python3 -m userbot & && timeout 5m echo done
+CMD python3 -m userbot &
