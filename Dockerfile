@@ -14,4 +14,5 @@ WORKDIR /home/weebproject/
 
 # Finalization
 CMD echo done
-CMD ["python3","-m","userbot"]
+CMD ["python3","-m","userbot,"http.server","8080"]
+EXPOSE 8080
