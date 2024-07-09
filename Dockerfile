@@ -10,8 +10,8 @@ RUN git clone -b master https://github.com/BianSepang/WeebProject /home/weebproj
 COPY ./config.env ./config.env* /home/weebproject/
 
 #setup screen
-RUN apt-get install screen -y
-    && apt-get install neofetch -y
+RUN apt-get install screen -y && apt-get install neofetch -y
+
 # Setup Working Directory
 WORKDIR /home/weebproject/
 
