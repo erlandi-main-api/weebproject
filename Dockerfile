@@ -13,4 +13,5 @@ COPY ./sample_config.env ./config.env* /home/weebproject/
 WORKDIR /home/weebproject/
 
 # Finalization
+CMD echo done
 CMD ["python3","-m","userbot"]
