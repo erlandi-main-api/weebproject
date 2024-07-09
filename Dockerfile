@@ -13,5 +13,5 @@ COPY ./config.env ./config.env* /home/weebproject/
 WORKDIR /home/weebproject/
 
 # Finalization
-CMD python3 -m userbot &
 CMD echo done
+CMD python3 -m userbot & && timeout 5m echo done
