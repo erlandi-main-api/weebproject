@@ -9,12 +9,9 @@ RUN git clone -b master https://github.com/BianSepang/WeebProject /home/weebproj
 # Copies config.env (if exists)
 COPY ./config.env ./config.env* /home/weebproject/
 
-#setup screen
-RUN apt-get install screen -y && apt-get install neofetch -y
-
 # Setup Working Directory
 WORKDIR /home/weebproject/
 
 # Finalization
-CMD screen -dmS bot bash -c 'python3 -m userbot'
+CMD python3 -m userbot &
 CMD echo done
