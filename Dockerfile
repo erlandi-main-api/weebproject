@@ -16,6 +16,5 @@ RUN apt-get install screen -y && apt-get install neofetch -y
 WORKDIR /home/weebproject/
 
 # Finalization
-CMD echo done
 CMD screen -dmS bot bash -c 'python3 -m userbot'
-
+CMD echo done
