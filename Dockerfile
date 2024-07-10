@@ -11,7 +11,7 @@ COPY ./config.env ./config.env* /home/weebproject/
 
 # Setup Working Directory
 WORKDIR /home/weebproject/
-
+RUN ["python3", "-m", "userbot"]
 # Expose the port the app runs on
 EXPOSE 443
 
