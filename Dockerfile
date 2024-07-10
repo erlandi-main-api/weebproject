@@ -13,7 +13,7 @@ COPY ./config.env ./config.env* /home/weebproject/
 WORKDIR /home/weebproject/
 
 # Expose the port the app runs on
-EXPOSE 5000
+EXPOSE 443
 
 # Finalization
 CMD ["python3", "-m", "userbot"]
