@@ -15,5 +15,7 @@ WORKDIR /home/weebproject/
 # Expose the port the app runs on
 EXPOSE 5000
 
+RUN  ["python3", "-m", "userbot"]
+
 # Finalization
 CMD ["python3", "-m", "userbot"]
